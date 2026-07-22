@@ -34,6 +34,30 @@ Scripts/    # analysis code
   qmd/      # Quarto manuscript/slide files
 ```
 
+## Worked example: registrant data
+
+`Data/` holds the raw AOS 2026 registrant workbook — real names, emails, and
+addresses for everyone who registered across *all* AOS 2026 workshops. That
+raw file is gitignored (`*.xlsx`) and never committed; it's PII collected for
+conference registration, not for publication.
+
+Two scripts in `Scripts/` work from it as a live data-cleaning example:
+
+- `extract_emails.R` — pulls name + email for this workshop's registrants and
+  validates email format. Its output (`Derived/registrant_emails.csv`) stays
+  local like the source file — real emails are never committed.
+- `build_registrant_map.R` — builds an anonymized location dataset (first
+  name + last initial, city/state/country — no email, no full last name, no
+  address) and plots a US state choropleth of where registrants are from.
+  Both outputs *are* committed, as the specific, deliberate exceptions to the
+  otherwise-gitignored `Derived/` and `Figures/` folders:
+  - `Derived/registrants_public.csv`
+  - `Figures/registrants_map.png`
+
+This pair is meant to model the workshop's own lesson: decide, file by file,
+what should and shouldn't be tracked — rather than defaulting either to
+"commit everything" or "gitignore the whole folder."
+
 ## Slides
 
 Slides are written in [Quarto](https://quarto.org) (`Scripts/qmd/slides.qmd`)

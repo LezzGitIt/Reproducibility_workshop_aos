@@ -12,11 +12,15 @@ Reproducibility_workshop_aos.docx
 # Copyrighted reference PDFs -- keep locally, don't redistribute (repo is public)
 Reproducibility_articles/
 
-# Recreatable outputs -- keep the folder, ignore generated contents
+# Recreatable outputs -- keep the folder, ignore generated contents.
+# Exceptions: the anonymized registrant extract and map are safe to share
+# (no emails/full last names) and are committed as a worked example.
 Derived/*
 !Derived/.gitkeep
+!Derived/registrants_public.csv
 Figures/*
 !Figures/.gitkeep
+!Figures/registrants_map.png
 
 # Quarto render byproducts (recreate with `quarto render`)
 Scripts/qmd/*.html
