@@ -1,28 +1,49 @@
 # Project notes — AOS 2026 Reproducibility Workshop
 
 ## What this is
-Prep folder for a 4-hour workshop Aaron is teaching at the AOS (American
-Ornithological Society) 2026 conference: **"Reproducibility beyond the code –
-organizing research projects in R."** Not a code/analysis project, so the usual
-Data/Derived/Figures/Scripts structure doesn't apply here — this folder holds
-the workshop proposal, background reading, and the registrant list.
+Prep folder — and now GitHub repo — for a 4-hour workshop Aaron is teaching at
+the AOS (American Ornithological Society) 2026 conference: **"Reproducibility
+beyond the code – organizing research projects in R."** The repo itself
+doubles as the live teaching example for the Git/GitHub section.
+
+- **Local:** this OneDrive folder (`git init`'d 2026-07-21)
+- **Remote:** https://github.com/LezzGitIt/Reproducibility_workshop_aos (public)
+- RStudio project file: `Reproducibility_workshop.Rproj`
 
 ## Folder contents
 - `Reproducibility_workshop_aos.docx` — the full workshop proposal submitted to
   AOS: instructor bio, summary, overview, target audience, logistics (1–5 PM,
   min 5 / max 25 participants, $0 cost, bring-your-own-laptop with R or Python
   + a free GitHub account).
-- `AOS 2026 Workshop Registrants 7-17-26.xlsx` — registration export covering
-  **all** AOS 2026 workshops (one sheet per workshop). Only the
-  **"Reproducibility Beyond Code"** sheet is this workshop's roster.
-- `Reproducibility_articles/` — six background/reference PDFs supporting the
-  workshop content (Kellner 2024 on functional R code rarity in SDM papers,
-  Jenkins 2023 on minimum reproducibility standards in ecology/evolution,
-  an empirical-evidence-of-widespread-[irreproducibility] paper, Braga 2023 on
-  GitHub for collaborative reproducible research, the 2015 Open Science
-  Collaboration *Science* replication study, and the SORTEE guidelines).
-- No `Data/`, `Derived/`, `Scripts/` folders — there is no analysis code in
-  this workshop-prep folder itself.
+- `AOS 2026 Workshop Registrants 7-17-26.xlsx` — **gitignored** (contains PII).
+  Registration export covering **all** AOS 2026 workshops (one sheet per
+  workshop). Only the **"Reproducibility Beyond Code"** sheet is this
+  workshop's roster. Local-only, never pushed.
+- `Reproducibility_articles/` — **gitignored** (copyrighted publisher PDFs,
+  repo is public). Six background/reference articles kept locally for prep;
+  citations below so they're still discoverable from the repo.
+- `Data/`, `Derived/`, `Figures/`, `Scripts/` (with `Scripts/qmd/` for Quarto
+  files) — standard project structure. `Derived/` and `Figures/` contents are
+  gitignored (recreatable); folders are kept via `.gitkeep`.
+- `Scripts/qmd/slides.qmd` — starter reveal.js slide deck (see below).
+
+## Reference articles (kept locally, not pushed — see above)
+- Kellner, Doser & Belant (2024). Functional R code is rare in species
+  distribution and abundance papers. *Ecology*.
+- Jenkins et al. (2023). Reproducibility in ecology and evolution: Minimum
+  standards for data and code. *Ecology and Evolution*, 13:e9961.
+  https://doi.org/10.1002/ece3.9961
+- Kimmel, Avolio & Ferraro (2023). Empirical evidence of widespread
+  exaggeration bias and selective reporting in ecology. *Nature Ecology &
+  Evolution*, 7:1525–1536. https://doi.org/10.1038/s41559-023-02144-3
+- Braga et al. (2023). Not just for programmers: How GitHub can accelerate
+  collaborative and reproducible research in ecology and evolution. *Methods
+  in Ecology and Evolution*, 14:1364–1380. https://doi.org/10.1111/2041-210X.14108
+- Open Science Collaboration (2015). Estimating the reproducibility of
+  psychological science. *Science*, 349(6251).
+- Pick, Allen, Bachelot et al. The SORTEE guidelines for data and code
+  quality control in ecology and evolutionary biology. *Peer Community
+  Journal*, Ecology section.
 
 ## Workshop content (3 parts, per the proposal)
 1. **Organizing R projects/repos** — directory structure, separating raw
@@ -56,6 +77,8 @@ as containing personal contact info and avoid pasting entries into shareable
 outputs like slides or artifacts.)
 
 ## Status / next steps
-Only the proposal + reference articles + registrant list exist so far — no
-slides, hands-on exercise files, or example repo have been built yet in this
-folder. Not a git repo currently.
+Repo is live on GitHub with the proposal, reference-article citations, project
+notes, folder skeleton, and a starter `slides.qmd` (renders cleanly to
+reveal.js HTML — confirmed 2026-07-21). Still needed: fleshed-out slide
+content, hands-on exercise files/example datasets in `Data/`, and a
+walkthrough repo-within-a-repo example for the Git/GitHub section.

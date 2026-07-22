@@ -1,2 +1,22 @@
 *.xlsx
 .DS_Store
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# Copyrighted reference PDFs -- keep locally, don't redistribute (repo is public)
+Reproducibility_articles/
+
+# Recreatable outputs -- keep the folder, ignore generated contents
+Derived/*
+!Derived/.gitkeep
+Figures/*
+!Figures/.gitkeep
+
+# Quarto render byproducts (recreate with `quarto render`)
+Scripts/qmd/*.html
+Scripts/qmd/*.pdf
+Scripts/qmd/*_files/
+Scripts/qmd/*_cache/
+/.quarto/
