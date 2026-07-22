@@ -1,9 +1,9 @@
 *.xlsx
+*.docx
 .DS_Store
 
 # Internal-only docs (not for the public repo)
 Project_notes.md
-Reproducibility_workshop_aos.docx
 .Rproj.user/
 .Rhistory
 .RData
@@ -22,7 +22,7 @@ Figures/*
 !Figures/registrants_map.png
 
 # Depends on the gitignored raw xlsx, so it can't run for anyone who only has this repo -- kept local only.
-Scripts/00_wrangling.R
+Scripts/00a_wrangling.R
 
 # Quarto render byproducts (recreate with `quarto render`)
 Scripts/qmd/*.html
