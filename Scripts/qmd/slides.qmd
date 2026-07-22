@@ -10,6 +10,9 @@ format:
     incremental: false
     code-line-numbers: true
     toc: false
+  beamer:
+    theme: metropolis
+    slide-level: 2
 execute:
   echo: true
   eval: false
