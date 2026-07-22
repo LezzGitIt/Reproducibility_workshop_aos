@@ -1,5 +1,9 @@
 *.xlsx
 .DS_Store
+
+# Internal-only docs (not for the public repo)
+Project_notes.md
+Reproducibility_workshop_aos.docx
 .Rproj.user/
 .Rhistory
 .RData
