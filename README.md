@@ -1,10 +1,3 @@
----
-
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 # Reproducibility Beyond the Code – organizing research projects in R
 
 ## What this workshop covers
@@ -34,6 +27,18 @@ Scripts/    # analysis code
 - `00_wrangling.R` (local only, not in this repo) - Creates the anonymized, shareable location dataset (first name + last initial, city/state/country) from the raw registrant workbook
 - `01_registrant_map.R` — Reads that dataset and plots a US state choropleth of where registrants are from
 - `qmd/02_slides.qmd` - Slides written in Quarto
+
+## Column names and descriptions
+
+`first_name:` Participants' first name
+
+`last_initial:` First initial of participants' last name
+
+`city:` City where participant resides
+
+`state:` State where participant resides
+
+`country:` Country where participant resides
 
 ## License
 
