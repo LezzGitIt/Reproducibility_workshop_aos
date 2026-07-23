@@ -22,7 +22,7 @@ execute:
 
 - 4-hour hands-on workshop
 - Bring an active research project if you have one
-- No prior Git/R experience required
+- No experience using R or GitHub is necessary, but basic familiarity with research, data management, and data analysis is assumed
 
 ## Why this workshop?
 
@@ -77,6 +77,15 @@ project/
 - Recover earlier versions safely
 - Refactor and delete with confidence
 
+## GitHub vocabulary
+
+- **Version control** — tracking changes to files over time, with the ability to go back
+- **Clone** — download a copy of a remote (GitHub) repository to your computer
+- **Fork** — your own copy of someone else's repository, on GitHub
+- **Branch** — a parallel line of work, isolated from the main version until merged
+- **Push** — upload your local commits to GitHub
+- **Pull** — download the latest commits from GitHub to your computer
+
 ## `.gitignore`
 
 - Decide what *shouldn't* be tracked
@@ -89,5 +98,8 @@ project/
 
 ## Hands-on time
 
+- Create a GitHub account, if you don't already have one
+- Create your first repository
+- Link it with R/RStudio (or your preferred IDE)
 - Apply this to your own project
 - Ask questions as you go
