@@ -8,15 +8,16 @@ Project_notes.md
 .Rhistory
 .RData
 .Ruserdata
+Rplots.pdf
 
 # Copyrighted reference PDFs -- keep locally, don't redistribute (repo is public)
 Reproducibility_articles/
 
-# Derived/ and Figures/ contents are recreatable and ignored by default; folders are kept via .gitkeep.
-# Exception: the anonymized registrant CSV and map PNG are safe to share, so they're committed as a worked example.
+# Derived/ contents are recreatable and fully ignored; kept empty except for .gitkeep.
 Derived/*
 !Derived/.gitkeep
-!Derived/registrants_public.csv
+
+# Figures/ contents are recreatable too, but the map PNG is a committed exception (safe to share, worked example).
 Figures/*
 !Figures/.gitkeep
 !Figures/registrants_map.png
