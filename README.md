@@ -4,7 +4,7 @@
 
 Reproducibility is now a baseline expectation in scientific research, yet many projects fall short because they lack clear structure, documentation, and organization. This workshop covers three broad themes:
 
-1.  **Organizing R projects & repositories** — logical directory structure, separating raw data / processed data / scripts / outputs, and writing scripts that are readable and rerunnable.
+1.  **Organizing repositories in R** — logical directory structure, separating raw data / processed data / scripts / outputs, and writing scripts that are readable and rerunnable.
 2.  **Documentation** — effective READMEs and (likely) lightweight data dictionaries.
 3.  **Git & GitHub** — version control basics, recovering earlier versions, safely refactoring or deleting code, `.gitignore`, and GitHub as a tool for meeting journal data/code-availability requirements.
 
@@ -12,9 +12,19 @@ No prior Git or R experience is required, but basic familiarity with research an
 
 ## Workshop outline
 
-Details are still in progress - please fill out this online survey here [ADD LINK].
+Details are still in progress - please fill out this online survey [here](https://forms.gle/bnXtEw4gnqbgRSRG7).
 
-I've created a
+One thing that will surely be covered is repository organization and documentation. Thus, I've created a simple repository that I am using to generate a map of where registrants are from, and create the slides for the workshop. Feel free to explore this repository and play around. Everything after the 'Further reading' section is relevant to this simple repository.
+
+## Further reading
+
+I will continue to update this with more readings that may be of interest.
+
+- Open Science Collaboration (2015). Estimating the reproducibility of psychological science. Science 349:aac4716.
+
+- Pick, J. L., B. J. Allen, B. Bachelot, K. R. Bairos-Novak, J. A. Brand, B. Class, T. Dallas, P. B. D’Amelio, E. Fenollosa, E. Fernández-Juricic, D. G. E. Gomes, et al. (2026). The SORTEE guidelines for data and code quality control in ecology and evolutionary biology. Peer Community Journal 6:e20.
+
+- Braga, P. H. P., K. Hébert, E. J. Hudgins, E. R. Scott, B. P. M. Edwards, L. L. Sánchez Reyes, M. J. Grainger, V. Foroughirad, F. Hillemann, A. D. Binley, C. B. Brookson, et al. (2023). Not just for programmers: How GitHub can accelerate collaborative and reproducible research in ecology and evolution. Methods in Ecology and Evolution 14:1364–1380.
 
 ## Repository structure
 
@@ -53,16 +63,6 @@ In `Data/registrants_public.csv` there are 5 columns:
 - `state:` State where participant resides
 
 - `country:` Country where participant resides
-
-## Further reading
-
-I will continue to update this with more readings that may be of interest.
-
-- Open Science Collaboration (2015). Estimating the reproducibility of psychological science. Science 349:aac4716.
-
-- Pick, J. L., B. J. Allen, B. Bachelot, K. R. Bairos-Novak, J. A. Brand, B. Class, T. Dallas, P. B. D’Amelio, E. Fenollosa, E. Fernández-Juricic, D. G. E. Gomes, et al. (2026). The SORTEE guidelines for data and code quality control in ecology and evolutionary biology. Peer Community Journal 6:e20.
-
-- Braga, P. H. P., K. Hébert, E. J. Hudgins, E. R. Scott, B. P. M. Edwards, L. L. Sánchez Reyes, M. J. Grainger, V. Foroughirad, F. Hillemann, A. D. Binley, C. B. Brookson, et al. (2023). Not just for programmers: How GitHub can accelerate collaborative and reproducible research in ecology and evolution. Methods in Ecology and Evolution 14:1364–1380.
 
 ## License
 
