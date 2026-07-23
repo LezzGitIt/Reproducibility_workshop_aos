@@ -25,6 +25,7 @@ state_map
 # Plot US state chloropleth ----
 # Kept to US states rather than a world map so this stays offline/reproducible -- no geocoding API calls needed to place cities on a map.
 registrants_map <- state_map %>% 
+  # draw one closed shape per distinct group (e.g. important for states like Michigan)
   ggplot(aes(long, lat, group = group, fill = registrants)) +
   geom_polygon(color = "white", linewidth = 0.2) +
   coord_quickmap() +
