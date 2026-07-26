@@ -2,19 +2,18 @@
 
 ## What this workshop covers
 
-Reproducibility is now a baseline expectation in scientific research, yet many projects fall short because they lack clear structure, documentation, and organization. This workshop covers three broad themes:
+Reproducibility is now a baseline expectation in scientific research, yet many projects fall short because they lack clear structure, documentation, and organization. Details are still in progress, but the workshop will cover four broad themes:
 
 1.  **Organizing repositories in R** — logical directory structure, separating raw data / processed data / scripts / outputs, and writing scripts that are readable and rerunnable.
-2.  **Documentation** — effective READMEs and (likely) lightweight data dictionaries.
-3.  **Git & GitHub** — version control basics, recovering earlier versions, safely refactoring or deleting code, `.gitignore`, and GitHub as a tool for meeting journal data/code-availability requirements.
+2.  **Data storage & FAIR principles** — where raw, derived, and archival data should live, and the FAIR (Findable, Accessible, Interoperable, Reusable) principles, e.g., lightweight data dictionaries.
+3.  **Documentation** — effective READMEs
+4.  **Git & GitHub** — version control basics, recovering earlier versions, safely refactoring or deleting code, `.gitignore`, and GitHub as a tool for meeting journal data/code-availability requirements.
 
 No prior Git or R experience is required, but basic familiarity with research and data analysis is assumed.
 
-## Workshop outline
+## Reproducible repositories
 
-Details are still in progress - please fill out this online survey [here](https://forms.gle/bnXtEw4gnqbgRSRG7) to help me gauge people's familiarity with R, R studio, and reproducibility concepts.
-
-One thing that will surely be covered is repository organization and documentation. Thus, I've created a simple repository that I am using to generate a map of where registrants are from, and create the slides for the workshop. Feel free to explore this repository and play around. Everything after the 'Further reading' section is relevant to this simple repository.
+One major focus will be repository organization and documentation. To this aim, I've created a simple repository that I am using to summarize participants' responses to the pre-workshop survey, generate a map of where registrants are from, and create the slides for the workshop. Feel free to explore this repository and play around - you might try downloading the repository and seeing if you can reproduce it on your machine. Everything after the 'Further reading' section is relevant to this simple repository.
 
 ## Further reading
 
