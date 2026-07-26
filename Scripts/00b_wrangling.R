@@ -5,6 +5,7 @@
 library(here)
 library(dplyr)
 library(tibble)
+library(tidyr)
 
 # Load data ----
 registrants_public <- read.csv(here("Data", "registrants_public.csv")) |>
@@ -25,3 +26,25 @@ international_counts
 
 # Export ----
 write.csv(us_counts, here("Derived", "us_counts.csv"), row.names = FALSE)
+
+# Reshape pre-workshop survey into long-format ratings and goal counts ----
+# Reads the committed Data/Pre_Workshop_Survey_public.csv (not the raw export), so this is reproducible from the repo alone
+
+# Load data ----
+survey_topics <- c("R", "RStudio", "Project organization", "Reproducibility concepts", "Git", "GitHub")
+survey_public <- read.csv(here("Data", "Pre_Workshop_Survey_public.csv"), check.names = FALSE) |>
+  as_tibble()
+
+# Reshape familiarity ratings ----
+# One row per respondent per topic, so 01_plotting.R can show the spread of ratings rather than a single collapsed mean
+survey_long <- survey_public |>
+  select(all_of(survey_topics)) |>
+  pivot_longer(everything(), names_to = "topic", values_to = "familiarity")
+
+# Count stated end-of-workshop goals by category ----
+survey_goals <- survey_public |>
+  count(goal_category, name = "respondents")
+
+# Export ----
+write.csv(survey_long, here("Derived", "survey_long.csv"), row.names = FALSE)
+write.csv(survey_goals, here("Derived", "survey_goals.csv"), row.names = FALSE)
