@@ -52,6 +52,8 @@ topic_order <- survey_long |>
 
 # Plot ----
 # Boxplot + jittered points show the spread across respondents, not just a single collapsed mean
+# Seeded so the jittered point positions (and the saved PNG) are identical on every re-run
+set.seed(42)
 familiarity_plot <- survey_long |>
   mutate(topic = factor(topic, levels = topic_order)) |>
   ggplot(aes(topic, familiarity)) +
