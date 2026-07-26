@@ -33,8 +33,9 @@ execute:
 ## Today's roadmap
 
 1. Organizing R projects & repositories
-2. Documentation (READMEs, data dictionaries)
-3. Git & GitHub for version control and archiving
+2. Data storage & FAIR principles
+3. Documentation (READMEs)
+4. Git & GitHub for version control and archiving
 
 # Who's in the room?
 
@@ -107,7 +108,28 @@ Scripts/
 
 A place for exploring ideas without cluttering your primary analysis scripts
 
-# Part 2: Documentation
+# Part 2: Data storage & FAIR principles
+
+## FAIR data principles
+
+- **F**indable — clear naming, documented, ideally with a persistent identifier
+- **A**ccessible — retrievable via standard, open protocols
+- **I**nteroperable — uses standard formats and vocabularies
+- **R**eusable — well-described, with clear license and provenance
+
+## Where should data live?
+
+- Raw data: read-only, untouched, backed up
+- Derived data: recreatable from raw + code, not the archival copy
+- Long-term archive: institutional repository, Dryad, Zenodo, etc.
+
+## Data dictionaries
+
+- One row per variable
+- Name, type, units, description
+- Lightweight — a table is enough
+
+# Part 3: Documentation
 
 ## Writing an effective README
 
@@ -116,13 +138,7 @@ A place for exploring ideas without cluttering your primary analysis scripts
 - What order do I run things in?
 - License
 
-## Data dictionaries
-
-- One row per variable
-- Name, type, units, description
-- Lightweight — a table is enough
-
-# Part 3: Git & GitHub
+# Part 4: Git & GitHub
 
 ## Why version control?
 
