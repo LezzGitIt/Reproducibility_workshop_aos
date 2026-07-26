@@ -40,7 +40,7 @@ Scripts/    # code
 
 To reproduce `01_plotting.R` and `qmd/02_slides.qmd`: R (4.4+) with the packages `here`, `dplyr`, `tibble`, `tidyr`, `ggplot2`, and `maps`; and [Quarto](https://quarto.org) (1.6+).
 
-The beamer version of the slides additionally needs a LaTeX installation -- [TinyTeX](https://yihui.org/tinytex/) is the easiest route (`quarto install tinytex`), or any existing TeX Live/MacTeX distribution works too.
+The slides render to PDF via beamer, which needs a LaTeX installation -- [TinyTeX](https://yihui.org/tinytex/) is the easiest route (`quarto install tinytex`), or any existing TeX Live/MacTeX distribution works too.
 
 ## Usage
 

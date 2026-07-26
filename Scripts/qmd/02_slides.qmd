@@ -3,13 +3,9 @@ title: "Reproducibility Beyond the Code"
 subtitle: "Organizing research projects in R"
 author: "Aaron Skinner, University of British Columbia"
 date: today
+resource-path:
+  - "../.."
 format:
-  revealjs:
-    theme: simple
-    slide-number: true
-    incremental: false
-    code-line-numbers: true
-    toc: false
   beamer:
     theme: metropolis
     slide-level: 2
@@ -41,17 +37,17 @@ execute:
 
 ## Where are you joining from?
 
-![](../../Figures/registrants_map.png){fig-align="center" width="80%"}
+![](Figures/registrants_map.png){fig-align="center" width="80%"}
 
 ## What are we starting from?
 
-![](../../Figures/survey_familiarity.png){fig-align="center" width="80%"}
+![](Figures/survey_familiarity.png){fig-align="center" width="80%"}
 
 Pre-workshop survey, n = 15 respondents
 
 ## What do you want to get out of this?
 
-![](../../Figures/survey_goals.png){fig-align="center" width="80%"}
+![](Figures/survey_goals.png){fig-align="center" width="80%"}
 
 ## SORTEE guidelines for computational reproducibility
 
@@ -69,7 +65,7 @@ Pick, J. L., B. J. Allen, B. Bachelot, K. R. Bairos-Novak, J. A. Brand, B. Class
 
 ## SORTEE's three goals
 
-![](../../Figures/SORTEE_3_goals.png){fig-align="center" width="90%"}
+![](Figures/SORTEE_3_goals.png){fig-align="center" width="90%"}
 
 Data re-use, transparency, and computational reproducibility — each spanning a different subset of the six stages
 
