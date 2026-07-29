@@ -2,7 +2,7 @@
 
 ## What this workshop covers
 
-Reproducibility is now a baseline expectation in scientific research, yet many projects fall short because they lack clear structure, documentation, and organization. Details are still in progress, but the workshop will cover four broad themes:
+Reproducibility is now a baseline expectation in scientific research, yet many projects fall short because they lack clear structure, documentation, and organization. This workshop covers four broad themes:
 
 1.  **Organizing repositories in R** — logical directory structure, separating raw data / processed data / scripts / outputs, and writing scripts that are readable and rerunnable.
 2.  **Data storage & FAIR principles** — where raw, derived, and archival data should live, and the FAIR (Findable, Accessible, Interoperable, Reusable) principles, e.g., lightweight data dictionaries.
