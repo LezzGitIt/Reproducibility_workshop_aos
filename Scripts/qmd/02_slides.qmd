@@ -189,36 +189,25 @@ Braga et al. (2023, *Methods in Ecology and Evolution*) — roughly
 beginner to intermediate:
 
 1.  Archiving citable code and data
-
-- 1.1. Requires 'minting' a DOI for long-term storage
-
+    - 1.1. Requires 'minting' a DOI for long-term storage
 2.  Storing and sharing a research compendium
-
-- Version control
-
+    - Version control
 3.  Project management
-
-- Issues, discussions, projects
-
+    - Issues, discussions, projects
 4.  Project continuity
-
-- See project development through time
+    - See project development through time
 
 5.  Open scientific discussion
 6.  Educational materials
-
-- Workshops, also see the [GitHub
-  Classroom](https://classroom.github.com) tool
+    - Workshops, also see the [GitHub
+      Classroom](https://classroom.github.com) tool
 
 ## 12 ways to use GitHub in research (II)
 
 7.  Hosting a website
-
-- Github pages: Free, and version control!
-
+    - Github pages: Free, and version control!
 8.  Writing a manuscript
-
-- e.g., Literate programming using Quarto
+    - e.g., Literate programming using Quarto
 
 9.  Organizing and managing teams
 10. Peer review
