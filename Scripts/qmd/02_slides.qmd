@@ -189,14 +189,13 @@ Braga et al. (2023, *Methods in Ecology and Evolution*) — roughly
 beginner to intermediate:
 
 1.  Archiving citable code and data
-    - 1.1. Requires 'minting' a DOI for long-term storage
+    - Requires 'minting' a DOI for long-term storage
 2.  Storing and sharing a research compendium
     - Version control
 3.  Project management
     - Issues, discussions, projects
 4.  Project continuity
     - See project development through time
-
 5.  Open scientific discussion
 6.  Educational materials
     - Workshops, also see the [GitHub
@@ -208,7 +207,6 @@ beginner to intermediate:
     - Github pages: Free, and version control!
 8.  Writing a manuscript
     - e.g., Literate programming using Quarto
-
 9.  Organizing and managing teams
 10. Peer review
 11. Asynchronous collaborative coding and writing
@@ -225,7 +223,42 @@ evolution. *Methods in Ecology and Evolution*, 14, 1364–1380.
 ## Hands-on time
 
 - Create a GitHub account, if you don't already have one
-- Create your first repository
-- Link it with R/RStudio (or your preferred IDE)
-- Apply this to your own project
-- Ask questions as you go
+- Create your first 'Test' repository
+- Link it with an RStudio project (or your preferred IDE)
+- Pick a few of the ways you'd like to use Github and implement
+- Then, apply this to your own project
+
+## Create a repository on Github
+
+### On Github
+
+- Log into your account on the GitHub Website
+- Click the green New or + button to create a new repository
+- Enter a repository name—it is best to name it exactly the same as your
+  RStudio project
+- Leave Add a README, Add .gitignore, and Choose a license unchecked
+- Click Create repository
+
+If creating a new project...
+
+- File -\> New project
+
+- 
+
+## If R project already exists...
+
+### Locally
+
+- Open your existing project in RStudio.
+- Go to the top menu and select Tools \> Project Options \> Git/SVN.
+- Change the Version control system from None to Git.
+- Click Yes when asked if you want to initialize a Git repository.
+
+### In terminal
+
+```{eval: false}
+
+git remote add origin [insert url]
+git branch -M main
+git push -u origin main
+```
