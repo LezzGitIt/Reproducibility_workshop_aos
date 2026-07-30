@@ -17,29 +17,44 @@ editor:
     wrap: 72
 ---
 
-## Estimating the reproducibility of psychological science
-
-![](Figures/osc2015_replication_scatter.png){fig-align="center"
-width="75%"}
-
-- 39% of replications matched the original result
-- Reproduced effect size was, on average, half the original
-
-Open Science Collaboration (2015). Estimating the reproducibility of
-psychological science. *Science*, 349(6251), aac4716.
-https://doi.org/10.1126/science.aac4716
-
 ## Roadmap
 
-1.  Reproducibility - why should we care?
-2.  Organizing R projects & repositories
-3.  Data storage & FAIR principles
-4.  Documentation (READMEs)
-5.  Git & GitHub for version control, archiving, and collaboration
+1.  Introductions
+2.  Reproducibility - why should we care?
+3.  Organizing R projects & repositories
+4.  Data storage & FAIR principles
+5.  Documentation (READMEs)
+6.  Git & GitHub for version control, archiving, and collaboration
+
+## Introductions
+
+Aaron Skinner — PhD Candidate, University of British Columbia
+
+::::: columns
+::: {.column width="38%"}
+![](Figures/Ferruginous_Pygmy_Owl_Cropped.jpeg){fig-align="center" width="100%"}
+
+\footnotesize Ferruginous Pygmy-Owl
+:::
+
+::: {.column width="62%"}
+![](Figures/Santiago_river_poles.jpeg){fig-align="center" width="100%"}
+
+\footnotesize Silvopastoral system
+:::
+:::::
+
+## Meet your neighbor
+
+- Where are you from? 
+- What do you do? (Elevator pitch) 
+- Why do you think reproducibility is important?  
+- What is one thing you hope to learn by the end of the workshop? 
 
 ## Who's in the room?
 
 ![](Figures/From_scripts/registrants_map.png){fig-align="center" width="80%"}
++ 3 from Canada and 3 from Argentina! 
 
 ## What are we starting from?
 
@@ -50,6 +65,18 @@ Pre-workshop survey, n = 15 respondents
 ## What do you want to get out of this?
 
 ![](Figures/From_scripts/survey_goals.png){fig-align="center" width="80%"}
+
+## Estimating the reproducibility of psychological science
+
+```{=latex}
+\begin{flushright}\tiny Open Science Collaboration (2015). \textit{Science}, 349(6251), aac4716. \url{https://doi.org/10.1126/science.aac4716}\end{flushright}
+```
+
+![](Figures/osc2015_replication_scatter.png){fig-align="center"
+width="62%"}
+
+- 39% of replications matched the original result
+- Reproduced effect size was, on average, half the original
 
 ## The 3 R's of robust research
 
@@ -199,7 +226,7 @@ https://datadryad.org/dataset/doi:10.5061/dryad.pnvx0k6xw
 - License
 - Generally written in Markdown (a lightweight markup language)
 
-## Hands on - Write a README
+### Hands on - Write a README
 
 # Part 4: Git & GitHub
 
@@ -238,6 +265,10 @@ https://datadryad.org/dataset/doi:10.5061/dryad.pnvx0k6xw
 
 - Decide what *shouldn't* be tracked
 - Large/raw data, generated outputs, your darkest secrets
+Useful tips 
+- Use asterisks to ignore file types (e.g., `*.xlsx`)
+- Ignores entire folders AND everything inside it, at any depth (e.g., `Some_folder/`)
+  - Use Some_folder/* combined with `!pattern` to create exceptions (e.g., `!Some_folder/keep_me`)
 
 ## 12 ways to use GitHub in research (I)
 
@@ -279,7 +310,7 @@ Braga, P. H. P. et al. (2023). Not just for programmers: How GitHub can
 accelerate collaborative and reproducible research in ecology and
 evolution. *Methods in Ecology and Evolution*, 14, 1364–1380.
 
-## Hands-on time
+## Hands-on - Linking Github & Rstudio
 
 - Create a GitHub account, if you don't already have one
 - Create your first 'Test' repository
