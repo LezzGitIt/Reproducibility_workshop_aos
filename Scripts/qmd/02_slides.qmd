@@ -39,17 +39,17 @@ https://doi.org/10.1126/science.aac4716
 
 ## Who's in the room?
 
-![](Figures/registrants_map.png){fig-align="center" width="80%"}
+![](Figures/From_scripts/registrants_map.png){fig-align="center" width="80%"}
 
 ## What are we starting from?
 
-![](Figures/survey_familiarity.png){fig-align="center" width="80%"}
+![](Figures/From_scripts/survey_familiarity.png){fig-align="center" width="80%"}
 
 Pre-workshop survey, n = 15 respondents
 
 ## What do you want to get out of this?
 
-![](Figures/survey_goals.png){fig-align="center" width="80%"}
+![](Figures/From_scripts/survey_goals.png){fig-align="center" width="80%"}
 
 ## The 3 R's of robust research
 
