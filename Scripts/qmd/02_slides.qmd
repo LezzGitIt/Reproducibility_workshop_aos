@@ -150,6 +150,18 @@ width="80%"}
 
 ![](Figures/download_repo.png)
 
+##  {#organizing-r-projects-divider}
+
+```{=latex}
+\begingroup
+\def\inserttitle{4a. Organizing R projects}
+\def\insertsubtitle{The biggest bang for your buck}
+\usebeamertemplate*{title}
+\usebeamertemplate*{subtitle}
+\usebeamertemplate*{title separator}
+\endgroup
+```
+
 ## Night terrors for reproducibility
 
 ```         
