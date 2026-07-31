@@ -1,4 +1,4 @@
-# Map Beyond Code registrant locations ----
+# Map registrant locations ----
 # Reads Derived/us_counts.csv (produced by 00b_wrangling.R) and plots a US state choropleth of where registrants are from
 
 # Libraries ----
@@ -34,7 +34,7 @@ registrants_map <- state_map %>%
 registrants_map
 
 # Save figure
-ggsave(here("Figures", "registrants_map.png"), registrants_map, width = 8, height = 5, dpi = 300)
+ggsave(here("Figures/From_scripts", "registrants_map.png"), registrants_map, width = 8, height = 5, dpi = 300)
 
 # Plot pre-workshop survey familiarity ----
 # Reads Derived/survey_long.csv (produced by 00b_wrangling.R) and plots self-rated familiarity by topic
@@ -66,7 +66,7 @@ familiarity_plot <- survey_long |>
 familiarity_plot
 
 # Save figure
-ggsave(here("Figures", "survey_familiarity.png"), familiarity_plot, width = 8, height = 5, dpi = 300)
+ggsave(here("Figures/From_scripts", "survey_familiarity.png"), familiarity_plot, width = 8, height = 5, dpi = 300)
 
 # Plot pre-workshop survey goals ----
 # Reads Derived/survey_goals.csv (produced by 00b_wrangling.R) and plots respondent counts per goal category
@@ -87,4 +87,4 @@ goals_plot <- survey_goals |>
 goals_plot
 
 # Save figure
-ggsave(here("Figures", "survey_goals.png"), goals_plot, width = 8, height = 4, dpi = 300)
+ggsave(here("Figures/From_scripts", "survey_goals.png"), goals_plot, width = 8, height = 4, dpi = 300)

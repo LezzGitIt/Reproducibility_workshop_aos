@@ -31,9 +31,12 @@ write.csv(us_counts, here("Derived", "us_counts.csv"), row.names = FALSE)
 # Reads the committed Data/Pre_Workshop_Survey_public.csv (not the raw export), so this is reproducible from the repo alone
 
 # Load data ----
-survey_topics <- c("R", "RStudio", "Project organization", "Reproducibility concepts", "Git", "GitHub")
 survey_public <- read.csv(here("Data", "Pre_Workshop_Survey_public.csv"), check.names = FALSE) |>
-  as_tibble()
+  clean_names() %>%
+  as_tibble() 
+survey_topics <- survey_public %>% 
+  select(where(is.numeric)) %>% 
+  names()
 
 # Reshape familiarity ratings ----
 # One row per respondent per topic, so 01_plotting.R can show the spread of ratings rather than a single collapsed mean
