@@ -6,6 +6,7 @@ library(here)
 library(dplyr)
 library(tibble)
 library(tidyr)
+library(janitor)
 
 # Load data ----
 registrants_public <- read.csv(here("Data", "registrants_public.csv")) |>
