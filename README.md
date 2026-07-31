@@ -4,7 +4,7 @@
 
 Reproducibility is now a baseline expectation in scientific research, yet many projects fall short because they lack clear structure, documentation, and organization. This workshop covers four broad themes:
 
-1.  **Foundation in reproducibility** — what is reproducibility and why should we care?
+1.  **Foundations of reproducibility** — what is reproducibility and why should we care?
 2.  **Organizing repositories in R** — logical directory structure, separating raw data / processed data / scripts / outputs, and writing scripts that are readable and rerunnable.
 3.  **Data storage & FAIR principles** — where raw, derived, and archival data should live, and the FAIR (Findable, Accessible, Interoperable, Reusable) principles, e.g., lightweight data dictionaries.
 4.  **Documentation** — effective READMEs
@@ -16,15 +16,21 @@ No prior Git or R experience is required, but basic familiarity with research an
 
 One major focus will be repository organization and documentation. To this aim, I've created a simple repository that I am using to summarize participants' responses to the pre-workshop survey, generate a map of where registrants are from, and create the slides for the workshop. Feel free to explore this repository and play around - you might try downloading the repository and seeing if you can reproduce it on your machine. Everything after the 'Further reading' section is relevant to this simple repository.
 
-## Further readings
+## Further study
 
 I will continue to update this with more readings that may be of interest.
+
+- Ioannidis, J. P. A. Why most published research findings are false. PLoS Med. 2, 696–701 (2005).
 
 - Open Science Collaboration (2015). Estimating the reproducibility of psychological science. Science 349:aac4716.
 
 - Pick, J. L., B. J. Allen, B. Bachelot, K. R. Bairos-Novak, J. A. Brand, B. Class, T. Dallas, P. B. D’Amelio, E. Fenollosa, E. Fernández-Juricic, D. G. E. Gomes, et al. (2026). The SORTEE guidelines for data and code quality control in ecology and evolutionary biology. Peer Community Journal 6:e20.
 
 - Braga, P. H. P., K. Hébert, E. J. Hudgins, E. R. Scott, B. P. M. Edwards, L. L. Sánchez Reyes, M. J. Grainger, V. Foroughirad, F. Hillemann, A. D. Binley, C. B. Brookson, et al. (2023). Not just for programmers: How GitHub can accelerate collaborative and reproducible research in ecology and evolution. Methods in Ecology and Evolution 14:1364–1380.
+
+- [Github Learn](https://learn.github.com/skills) - Learn Github with Github
+
+- [R for Data Science (2e)](https://r4ds.hadley.nz/). Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund.
 
 ## Repository structure
 
