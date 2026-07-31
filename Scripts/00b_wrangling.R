@@ -47,6 +47,9 @@ survey_long <- survey_public |>
 
 # Count stated end-of-workshop goals by category ----
 survey_goals <- survey_public |>
+  mutate(goal_category = ifelse(
+    goal_category %in% c("Project organization", "Reproducibility"), "Reproducibility / organization", goal_category)
+    ) %>%
   count(goal_category, name = "respondents")
 
 # Export ----

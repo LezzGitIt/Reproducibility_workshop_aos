@@ -139,7 +139,7 @@ minutes
 ![](Figures/From_scripts/survey_familiarity.png){fig-align="center"
 width="80%"}
 
-Pre-workshop survey, n = 15 respondents
+Pre-workshop survey, n = 19 respondents
 
 ## What do you want to get out of this?
 
