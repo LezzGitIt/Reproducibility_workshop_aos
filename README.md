@@ -44,10 +44,10 @@ The slides render to PDF via beamer, which needs a LaTeX installation -- [TinyTe
 
 ## Usage
 
-To reproduce the choropleth map, survey figure, and slide deck, the scripts should be run in order from 00 - 02. The 00 wrangling script reads the public registrant and survey data and formats it for use in the 01_plotting script.
+To reproduce the choropleth map, survey figure, and slide deck, the scripts should be run in order from 00 - 02.
 
-- `00b_wrangling.R` - Creates the anonymized, shareable location dataset (first name + last initial, city/state/country) from the raw registrant workbook, and reshapes the pre-workshop survey into long-format ratings and goal-category counts
-- `01_plotting.R` — Reads those datasets and plots a US state choropleth of where registrants are from, plus charts of pre-workshop survey familiarity by topic and goals by category
+- `00b_wrangling.R` - Create and export `us_counts`; format the pre-workshop survey into long-format ratings and goal-category counts
+- `01_plotting.R` — Reads datasets from `00b` and plot a US state choropleth of where registrants are from, plus charts of pre-workshop survey familiarity by topic and goals by category
 - `qmd/02_slides.qmd` - Slide deck written in Quarto
 
 ## Column names and descriptions
