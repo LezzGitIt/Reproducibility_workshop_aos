@@ -150,18 +150,6 @@ width="80%"}
 
 ![](Figures/download_repo.png)
 
-##  {#organizing-r-projects-divider}
-
-```{=latex}
-\begingroup
-\def\inserttitle{4a. Organizing R projects}
-\def\insertsubtitle{The biggest bang for your buck}
-\usebeamertemplate*{title}
-\usebeamertemplate*{subtitle}
-\usebeamertemplate*{title separator}
-\endgroup
-```
-
 ## Night terrors for reproducibility
 
 ```         
@@ -314,39 +302,47 @@ https://datadryad.org/dataset/doi:10.5061/dryad.pnvx0k6xw
 
 # 4d. Git & GitHub
 
-## 12 ways to use GitHub in research (I)
+## Why version control?
 
-Braga et al. (2023, *Methods in Ecology and Evolution*) — roughly
-beginner to intermediate:
+- Track changes over time
+- Recover earlier versions safely
+- Transparency in development
+- Refactor and delete with confidence
+- Add comments to help track your code
 
-1.  Archiving citable code and data
-    - Requires 'minting' a DOI for long-term storage
-2.  Storing and sharing a research compendium
-    - Version control
-3.  Project management
+## Hands on - Create 'Test' repo & link with Rstudio
+
+- Create or log into GitHub account
+- Create your first 'Test' repository
+  - Click the green New or + button to create a new repository
+  - Enter a repository name (e.g., 'Test')
+  - Add a README and .gitignore
+  - Click Create repository
+- Link it with an RStudio project (or your preferred IDE)
+  - File -\> New project
+  - Click 'Version control', 'Git', then paste url from github
+  - 'Create Project'
+
+## 8 ways to use GitHub in research
+
+1.  Version control
+2.  Storing and sharing your research
+3.  Collaborative projects
     - Issues, discussions, projects
+    - Asynchronous collaborative coding and writing
 4.  Project continuity
-    - See project development through time
+    - E.g., research labs
 5.  Open scientific discussion
     - [GitHub Community forum](https://github.community/)
-6.  Educational materials
-    - Workshops, also see the [GitHub
-      Classroom](https://classroom.github.com) tool
-
-## 12 ways to use GitHub in research (II)
-
-7.  Writing a manuscript
-    - e.g., Literate programming using Quarto
-8.  Asynchronous collaborative coding and writing
-    - Clone and fork, merge through pull request
-9.  Automation
+6.   Websites, workshops, educational materials
+    - Also see the [GitHub Classroom](https://classroom.github.com) tool
+7.  Automation
     - Github actions, triggered by events (e.g. push, pull request or at
       specified times)
-10. Hosting a website
-11. Organizing and managing teams
-12. Peer review
+8.  Archiving citable code and data
+    - Requires 'minting' a DOI for long-term storage
 
-## 12 ways to use GitHub in research (III)
+## 12 ways to use GitHub in research
 
 ![](Figures/github_12_uses.png){fig-align="right" width="80%"}
 
@@ -354,18 +350,12 @@ Braga, P. H. P. et al. (2023). Not just for programmers: How GitHub can
 accelerate collaborative and reproducible research in ecology and
 evolution. *Methods in Ecology and Evolution*, 14, 1364–1380.
 
-## Why version control?
-
-- Track changes over time
-- Recover earlier versions safely
-- Transparency in development
-- Refactor and delete with confidence
-
 ## GitHub vocabulary
 
 - **Version control** — tracking changes to files over time, with the
   ability to go back
-- **Fork** — your own copy of someone else's repository, on GitHub
+- **Fork** — create your own copy of someone else's repository, on
+  GitHub
 - **Clone** — download a copy of a repository to your computer
 - **Branch** — a parallel line of work, isolated from the main version
   until merged
@@ -375,55 +365,22 @@ evolution. *Methods in Ecology and Evolution*, 14, 1364–1380.
 - **Pull request** — ask the original repo's owner to merge your branch
   in
 
-## Collaborating on GitHub: the workflow
+## Hands on - Collaborating on GitHub
 
-1.  **Fork** the repository, on GitHub
-2.  **Clone** your fork, to your computer
-3.  **Branch** — create a new branch for your change
+1.  **Fork** the repository
+2.  **Clone** fork to your computer
+3.  **Branch** — create a new branch for your changes
 4.  Edit your files
 5.  **Commit** your changes
 6.  **Push** your branch to GitHub
 7.  Open a **pull request** back to the original repo
 
-## `.gitignore`
-
-- Decide what *shouldn't* be tracked
-- Large/raw data, generated outputs, your darkest secrets Useful tips
-- Use asterisks to ignore file types (e.g., `*.xlsx`)
-- Ignores entire folders AND everything inside it, at any depth (e.g.,
-  `Some_folder/`)
-  - Use Some_folder/\* combined with `!pattern` to create exceptions
-    (e.g., `!Some_folder/keep_me`)
-
-## Hands-on - Linking Github & Rstudio
-
-- Create a GitHub account, if you don't already have one
-- Create your first 'Test' repository
-- Link it with an RStudio project (or your preferred IDE)
-- Pick a few of the ways you'd like to use Github and implement
-- Then, apply this to your own project
-
 ## Linking R studio and Github
 
-### Step 1: Create Github repository
+### If R project already exists...
 
-- Log into your account on the GitHub Website
-- Click the green New or + button to create a new repository
-- Enter a repository name—it is best to name it exactly the same as your
-  RStudio project
-- Depending (2a vs 2b): Add a README and .gitignore?
-- Click Create repository
-
-## Step 2: Link Github repo with R studio project
-
-### 2a: If creating a new project...
-
-- File -\> New project
-- Click 'Version control', 'Git', then paste url from github
-- 'Create Project'
-
-### 2b: If R project already exists...
-
+- First, create repository on Github - best to name it the same as your
+  R project
 - Locally, open your existing project in RStudio
 - Select Tools -\> Project Options -\> Git/SVN
 - Change Version control system from None -\> Git, and click 'Yes' to
@@ -435,6 +392,19 @@ git remote add origin [insert url]
 git branch -M main
 git push -u origin main
 ```
+
+## `.gitignore`
+
+- Decide what *shouldn't* be tracked
+- Large/raw data, generated outputs, your darkest secrets
+
+[Useful tips]{.underline}
+
+- Use asterisks to ignore file types (e.g., `*.xlsx`)
+- Ignores entire folders AND everything inside it, at any depth (e.g.,
+  `Some_folder/`)
+  - Use Some_folder/\* combined with `!pattern` to create exceptions
+    (e.g., `!Some_folder/keep_me`)
 
 ## Git vs GitHub
 
