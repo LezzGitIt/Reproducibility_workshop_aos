@@ -43,26 +43,36 @@ ggsave(here("Figures/From_scripts", "registrants_map.png"), registrants_map, wid
 survey_long <- read.csv(here("Derived", "survey_long.csv")) |>
   as_tibble()
 
-# Order topics by median familiarity, least to most familiar ----
-topic_order <- survey_long |>
-  group_by(topic) |>
-  summarise(median_familiarity = median(familiarity)) |>
-  arrange(median_familiarity) |>
-  pull(topic)
+# Group related topics together, top to bottom once flipped ----
+topic_order <- c("r", "r_studio", "reproducibility_concepts", "project_organization", "git", "git_hub")
+
+# Display labels matching the original (pre-clean_names) survey column names ----
+topic_labels <- c(
+  r = "R",
+  r_studio = "RStudio",
+  reproducibility_concepts = "Reproducibility concepts",
+  project_organization = "Project organization",
+  git = "Git",
+  git_hub = "GitHub"
+)
 
 # Plot ----
 # Boxplot + jittered points show the spread across respondents, not just a single collapsed mean
+# Diamond marker adds the mean alongside the boxplot's median
 # Seeded so the jittered point positions (and the saved PNG) are identical on every re-run
 set.seed(42)
 familiarity_plot <- survey_long |>
-  mutate(topic = factor(topic, levels = topic_order)) |>
+  mutate(topic = factor(topic, levels = rev(topic_order), labels = topic_labels[rev(topic_order)])) |>
   ggplot(aes(topic, familiarity)) +
   geom_boxplot(outlier.shape = NA, fill = "grey90") +
   geom_jitter(width = 0.1, height = 0.1, alpha = 0.6) +
+  stat_summary(aes(shape = "Mean"), fun = mean, geom = "point", size = 3, fill = "white") +
+  scale_shape_manual(name = NULL, values = c(Mean = 23)) +
   coord_flip() +
   scale_y_continuous(breaks = 1:5, expand = expansion(mult = 0.08)) +
   labs(x = NULL, y = "Self-rated familiarity (1 = none, 5 = expert)") +
-  theme_minimal(base_size = 14)
+  theme_minimal(base_size = 14) +
+  theme(axis.text.y = element_text(size = 16), legend.position = "bottom")
 familiarity_plot
 
 # Save figure
