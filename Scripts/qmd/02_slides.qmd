@@ -372,11 +372,11 @@ https://datadryad.org/dataset/doi:10.5061/dryad.pnvx0k6xw
     - E.g., research labs
 5.  Open scientific discussion
     - [GitHub Community forum](https://github.community/)
-6.   Websites, workshops, educational materials
+6.  Websites, workshops, educational materials
     - Also see the [GitHub Classroom](https://classroom.github.com) tool
 7.  Automation
-    - Github actions, triggered by events (e.g. push, pull request or at
-      specified times)
+    - [Github actions](https://github.com/features/actions), triggered
+      by events (e.g. push, pull request)
 8.  Archiving citable code and data
     - Requires 'minting' a DOI for long-term storage
 
