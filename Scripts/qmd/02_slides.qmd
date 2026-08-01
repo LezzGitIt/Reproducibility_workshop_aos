@@ -33,7 +33,7 @@ editor:
 
     4c. Documentation (READMEs)
 
-    4d. Git & GitHub for version control, archiving, and collaboration
+    4d. Git & GitHub for version control & collaboration
 
 ## Part 1: Introductions
 
