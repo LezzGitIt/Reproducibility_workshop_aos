@@ -289,19 +289,11 @@ project/        # 1 R project per manuscript
 
 ![](Figures/data_dictionary.png){fig-align="center" width="100%"}
 
-## Data paper - Facilitating reuse
+## Hands on - Data storage (10 minutes)
 
-- Define data scope
-- Provide context
-- Detailed methods section
-- Quality assurance & control
-- Technical aspects - file types, data size, and software needed
-- Data collectors credited
-- The 4th R: Reusability!
-  - [15 minute
-    YouTube](https://www.youtube.com/watch?v=jR3Xa2Id-fo&t=774s)
+- Organize your data according to FAIR principles
 
-## Hands on - Example data repositories
+[Example datasets]{.underline}
 
 ### AVONET, Tobias et al 2022
 
@@ -322,10 +314,29 @@ https://datadryad.org/dataset/doi:10.5061/dryad.pnvx0k6xw
 - What is this project?
 - What's in each folder?
 - What order do I run things in?
-- License
+- License - note that code published without a licence is under
+  exclusive copyright by default!
+  - More [information on
+    licenses](https://opensource.guide/legal/#which-open-source-license-is-appropriate-for-my-project)
+    (the MIT license is a good option for most starting projects!)
 - Generally written in Markdown (a lightweight markup language)
 
-### Hands on - Write a README
+## Hands on - Write a README (10 minutes)
+
+- **Project Title** — Name of your project
+- **Description** — A short summary explaining what the project does,
+  why it exists, and its core features.
+- **Table of Contents** — An optional bulleted list of links to help
+  navigate long README files.
+- **Installation / usage** — Step-by-step instructions on how to set up
+  the development environment and run the project.
+- **Contributing** — Guidelines detailing how other developers can
+  contribute to your repository.
+- **License** — The legal framework governing how your software can be
+  copied, modified, or distributed.
+- **Acknowledgments** — thank individuals and resources that helped the
+  project
+- **Contact** —Your contact information
 
 # 4d. Git & GitHub
 
@@ -419,6 +430,20 @@ git remote add origin [insert url]
 git branch -M main
 git push -u origin main
 ```
+
+# Extras
+
+## Data paper - Facilitating reuse
+
+- Define data scope
+- Provide context
+- Detailed methods section
+- Quality assurance & control
+- Technical aspects - file types, data size, and software needed
+- Data collectors credited
+- The 4th R: Reusability!
+  - [15 minute
+    YouTube](https://www.youtube.com/watch?v=jR3Xa2Id-fo&t=774s)
 
 ## `.gitignore`
 
