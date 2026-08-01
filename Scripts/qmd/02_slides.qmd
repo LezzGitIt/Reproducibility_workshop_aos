@@ -297,15 +297,15 @@ project/        # 1 R project per manuscript
 
 ### AVONET, Tobias et al 2022
 
-https://figshare.com/s/b990722d72a26b5bfead
+- https://figshare.com/s/b990722d72a26b5bfead
 
 ### Atlantic forest birds, Rodrigues et al 2019
 
-https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecy.2647
+- https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecy.2647
 
 ### Bergmann's nightjars, Skinner et al 2025
 
-https://datadryad.org/dataset/doi:10.5061/dryad.pnvx0k6xw
+- https://datadryad.org/dataset/doi:10.5061/dryad.pnvx0k6xw
 
 # 4c. Documentation
 
@@ -347,6 +347,17 @@ https://datadryad.org/dataset/doi:10.5061/dryad.pnvx0k6xw
 - Transparency in development
 - Refactor and delete with confidence
 - Add comments to help track your code
+
+## **The Core Rule: Atomic Commits**
+
+- **One change or idea per commit**: Do not bundle a feature build, a
+  bug fix, and a typo correction into a single commit.
+
+- **Keep it working**: Ensure your code still compiles or passes basic
+  tests before committing.
+
+- **Easy rollbacks**: If a new feature breaks your project, revert that
+  specific change without losing unrelated work.
 
 ## Hands on - Create 'Test' repo & link with Rstudio (20 minutes)
 
