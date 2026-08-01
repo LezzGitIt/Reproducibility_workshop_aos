@@ -9,6 +9,12 @@ format:
   beamer:
     theme: metropolis
     slide-level: 2
+    colorlinks: true
+header-includes:
+  - |
+    \usepackage[normalem]{ulem}
+    \let\originalhref\href
+    \renewcommand{\href}[2]{\originalhref{#1}{\uline{#2}}}
 execute:
   echo: true
   eval: false
@@ -71,7 +77,7 @@ width="80%"}
 ## Estimating the reproducibility of psychological science
 
 ```{=latex}
-\begin{flushright}\tiny Open Science Collaboration (2015). \textit{Science}, 349(6251), aac4716. \url{https://doi.org/10.1126/science.aac4716}\end{flushright}
+\begin{flushright}\tiny Open Science Collaboration (2015). \textit{Science}, 349(6251), aac4716. \uline{\url{https://doi.org/10.1126/science.aac4716}}\end{flushright}
 ```
 
 ![](Figures/osc2015_replication_scatter.png){fig-align="center"
