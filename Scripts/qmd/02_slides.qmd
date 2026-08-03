@@ -444,6 +444,33 @@ evolution. *Methods in Ecology and Evolution*, 14, 1364–1380.
 6.  **Push** your branch to GitHub
 7.  Open a **pull request** back to the original repo
 
+## Hands on - Collaborating on GitHub (20 minutes)
+
+Pair up with a partner, or use the [octocat/Spoon-Knife
+repo](https://github.com/octocat/Spoon-Knife)
+
+```{r}
+# 1. Fork repository on github.com
+# 2. Clone fork to your machine (nav to directory first)
+git clone https://github.com/<your-username>/<repo>.git
+cd <repo>
+# 3. Create a branch for your changes
+git checkout -b my-feature
+# 4. Edit files
+# 5. Stage and commit
+git add <file>
+git commit -m "Describe your change"
+# 6. Push the branch to GitHub
+git push -u origin my-feature
+```
+
+## 7. Open a pull request 
+
+From your forked repo, go to branches and under 'Your branches' select
+'New pull request'
+
+![](Figures/github_pr.png){fig-align="center" width="95%"}
+
 ## Linking R studio and Github
 
 ### If R project already exists...
