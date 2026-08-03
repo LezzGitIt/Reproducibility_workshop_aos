@@ -60,7 +60,7 @@ width="100%"}
 :::
 :::::
 
-## Meet your neighbor
+## Meet your neighbor - 5 minutes
 
 - Where are you from?
 - What do you do? (Elevator pitch)
@@ -83,7 +83,7 @@ width="80%"}
 ![](Figures/osc2015_replication_scatter.png){fig-align="center"
 width="62%"}
 
-- 39% of replications matched the original result
+- 39% of 100 studies were reproducible
 - Reproduced effect size was, on average, half the original
 
 ## We are still far off from computational reproducibility
@@ -170,6 +170,8 @@ width="80%"}
 
 - Collaborating on GitHub - 20 minutes
 
+# 4a. Organizing R projects & repositories
+
 ## Night terrors for reproducibility
 
 ```         
@@ -181,14 +183,12 @@ My Project -
 ├── script.R
 ├── script_FINAL.R
 ├── script_FINAL_FINAL_v2.R
-├── backup/
-│   └── analysis (copy).R
 ├── figure.png
-├── Figure1_reallyfinal.png
-├── notes.txt
+├── my_notes.txt
 └── stuff/
     └── old stuff/
         └── results_dont_delete.xlsx
+        └── analysis (copy).R
 ```
 
 ## Night terrors for reproducibility
@@ -204,14 +204,12 @@ My Project -
 ├── script.R
 ├── script_FINAL.R
 ├── script_FINAL_FINAL_v2.R
-├── backup/
-│   └── analysis (copy).R
 ├── figure.png
-├── Figure1_reallyfinal.png
-├── notes.txt
+├── my_notes.txt
 └── stuff/
     └── old stuff/
         └── results_dont_delete.xlsx
+        └── analysis (copy).R
 ```
 :::
 
@@ -228,7 +226,7 @@ My Project -
 :::
 :::::
 
-## A logical directory structure
+## Foundations of a reproducible workflow
 
 ```         
 project/        # 1 R project per manuscript
@@ -255,8 +253,8 @@ project/        # 1 R project per manuscript
 - One or a few related goals per script
 - Should run start to finish (or until `stop()`)
 - Output of one script is often input of next script
-- See online ['R for Data Science'](https://r4ds.hadley.nz/) free
-  textbook
+- For coding help - online ['R for Data
+  Science'](https://r4ds.hadley.nz/) free textbook
 :::
 
 ::: {.column width="45%"}
@@ -286,11 +284,17 @@ project/        # 1 R project per manuscript
 
 ## FAIR data principles
 
-- **F**indable — clear naming, documented, ideally with a persistent
-  identifier (e.g. DOI)
-- **A**ccessible — retrievable via standard, open protocols
-- **I**nteroperable — Standard formats, open formats over proprietary
+- **F**indable — Data and metadata should be easy to locate
+  - descriptive keywords and standard titles
+  - persistent identifier (e.g. DOI)
+- **A**ccessible — Retrieval method should be clear, standardized
+  protocol
+  - access can be open or restricted
+- **I**nteroperable — Use standard, machine-readable formats and shared
+  vocabularies
+  - open over proprietary formats
 - **R**eusable — well-described, with clear license and provenance
+  - a detailed README or even a data paper!
 
 ## Data dictionaries
 
@@ -430,7 +434,7 @@ evolution. *Methods in Ecology and Evolution*, 14, 1364–1380.
 - **Pull request** — ask the original repo's owner to merge your branch
   in
 
-## Hands on - Collaborating on GitHub (20 minutes)
+## Collaborating on GitHub
 
 1.  **Fork** the repository
 2.  **Clone** fork to your computer
