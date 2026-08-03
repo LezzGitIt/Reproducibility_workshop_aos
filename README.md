@@ -44,9 +44,19 @@ Scripts/    # code
 
 ## Dependencies
 
-To reproduce `01_plotting.R` and `qmd/02_slides.qmd`: R (4.4+) with the packages `here`, `dplyr`, `tibble`, `tidyr`, `ggplot2`, and `maps`; and [Quarto](https://quarto.org) (1.6+).
+To reproduce `00b_wrangling.R`, `01_plotting.R`, and `qmd/02_slides.qmd`: R (4.4+) with the packages below, and [Quarto](https://quarto.org) (1.6+).
 
-The slides render to PDF via beamer, which needs a LaTeX installation -- [TinyTeX](https://yihui.org/tinytex/) is the easiest route (`quarto install tinytex`), or any existing TeX Live/MacTeX distribution works too.
+``` r
+install.packages(c("here", "dplyr", "tibble", "tidyr", "ggplot2", "maps", "janitor"))
+```
+
+The slides render to PDF via beamer, which needs a LaTeX installation -- [TinyTeX](https://yihui.org/tinytex/) is the easiest route, run from the Terminal:
+
+``` sh
+quarto install tinytex
+```
+
+Any existing TeX Live/MacTeX distribution works too.
 
 ## Usage
 
