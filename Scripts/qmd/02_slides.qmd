@@ -86,6 +86,17 @@ width="62%"}
 - 39% of replications matched the original result
 - Reproduced effect size was, on average, half the original
 
+## We are still far off from computational reproducibility
+
+```{=latex}
+\begin{flushright}\tiny Kimmel, K., Avolio, M.L., \& Ferraro, P.J. (2023). \textit{Nature Ecology \& Evolution}, 7(9), 1525--1536. \uline{\url{https://doi.org/10.1038/s41559-023-02144-3}}\end{flushright}
+```
+
+Of 354 studies published between 2018 and 2020...
+
+![](Figures/Kimmel_Data_code_availability_2023.png){fig-align="center"
+width="80%"}
+
 # Part 3: Reproducibility - basic principles
 
 ## The 3 R's of robust research
@@ -342,22 +353,25 @@ project/        # 1 R project per manuscript
 
 ## Why version control?
 
-- Track changes over time
+- Track changes over time with *commits* (snapshot + message)
 - Recover earlier versions safely
 - Transparency in development
 - Refactor and delete with confidence
 - Add comments to help track your code
 
-## **The Core Rule: Atomic Commits**
+## **How often should I commit?**
 
-- **One change or idea per commit**: Do not bundle a feature build, a
-  bug fix, and a typo correction into a single commit.
+- **Atomic commits:** One change or idea per commit
 
-- **Keep it working**: Ensure your code still compiles or passes basic
-  tests before committing.
+  - Easy rollbacks: Revert specific changes without losing unrelated
+    work
 
-- **Easy rollbacks**: If a new feature breaks your project, revert that
-  specific change without losing unrelated work.
+- Before a major refactor
+
+- Before you switch to a new task
+
+- **Tip:** Ensure your code still compiles or passes basic tests before
+  committing.
 
 ## Hands on - Create 'Test' repo & link with Rstudio (20 minutes)
 
@@ -371,6 +385,7 @@ project/        # 1 R project per manuscript
   - File -\> New project
   - Click 'Version control', 'Git', then paste url from github
   - 'Create Project'
+- Create files, commit them, make changes, commit... push
 
 ## 8 ways to use GitHub in research
 
@@ -403,12 +418,13 @@ evolution. *Methods in Ecology and Evolution*, 14, 1364–1380.
 
 - **Version control** — tracking changes to files over time, with the
   ability to go back
+- **Stage** — decide which files will be packaged into your commit
+- **Commit** — save a snapshot of your changes, with a message
 - **Fork** — create your own copy of someone else's repository, on
   GitHub
 - **Clone** — download a copy of a repository to your computer
 - **Branch** — a parallel line of work, isolated from the main version
   until merged
-- **Commit** — save a snapshot of your changes, with a message
 - **Push** — upload your local commits to GitHub
 - **Pull** — download the latest commits from GitHub to your computer
 - **Pull request** — ask the original repo's owner to merge your branch
