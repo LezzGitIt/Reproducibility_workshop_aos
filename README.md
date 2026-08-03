@@ -84,7 +84,7 @@ In `Data/registrants_public.csv` there are 5 columns:
 
 - `R`, `RStudio`, `Project organization`, `Reproducibility concepts`, `Git`, `GitHub`: Six columns with 1–5 self-rated familiarity ratings
 
-- `goal_category`: a 3-4 category classification of each respondent's free-text answer to "what's one thing you'd like to be able to do by the end of this workshop?"
+- `goal_category`: a 3 category classification of each respondent's free-text answer to "what's one thing you'd like to be able to do by the end of this workshop?"
 
 ## License
 

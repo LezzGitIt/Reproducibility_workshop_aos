@@ -285,7 +285,7 @@ project/        # 1 R project per manuscript
 ## FAIR data principles
 
 - **F**indable — Data and metadata should be easy to locate
-  - descriptive keywords and standard titles
+  - descriptive keywords and titles
   - persistent identifier (e.g. DOI)
 - **A**ccessible — Retrieval method should be clear, standardized
   protocol
@@ -361,7 +361,7 @@ project/        # 1 R project per manuscript
 - Recover earlier versions safely
 - Transparency in development
 - Refactor and delete with confidence
-- Add comments to help track your code
+- Add comments to help track development of your code
 
 ## **How often should I commit?**
 
@@ -464,7 +464,7 @@ git commit -m "Describe your change"
 git push -u origin my-feature
 ```
 
-## 7. Open a pull request 
+## 7. Open a pull request
 
 From your forked repo, go to branches and under 'Your branches' select
 'New pull request'
