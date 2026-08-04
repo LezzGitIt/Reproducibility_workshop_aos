@@ -33,6 +33,9 @@ Data/Pre_Workshop_Survey.csv
 # Depends on the gitignored raw xlsx, so it can't run for anyone who only has this repo -- kept local only.
 Scripts/00a_wrangling.R
 
+# Unused figure -- not referenced in any slide or doc
+Figures/Culina_Code_sharing_journals_2020.png
+
 # Quarto render byproducts (recreate with `quarto render`)
 Scripts/qmd/*.html
 Scripts/qmd/*.pdf
